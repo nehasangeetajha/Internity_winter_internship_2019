@@ -2,7 +2,7 @@
 using namespace std;
 
 template <class T>
-void insertionSort(int arr[],int n)
+void insertionSort(T arr[],int n)
 {
     int i,j;
     T v;
@@ -19,7 +19,8 @@ void insertionSort(int arr[],int n)
     }
 }
 
-void printArray(int arr[], int n)
+template <class T>
+void printArray(T arr[], int n)
 {
     int i;
     for (i = 0; i < n; i++)
@@ -30,7 +31,7 @@ void printArray(int arr[], int n)
 int main()
 {
     int n = 5;
-    int arr[n] = {5,4,1,2,9};
-    insertionSort<int>(arr,n);
-    printArray(arr,n);
+    char arr[n] = {'b','e','z','a','f'};
+    insertionSort<char>(arr,n);
+    printArray<char>(arr,n);
 }
