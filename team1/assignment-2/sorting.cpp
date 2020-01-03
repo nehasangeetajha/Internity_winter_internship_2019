@@ -159,5 +159,12 @@ int main()
     printArray(arr1,n);
     insertionSort(arr2,n);
     printArray(arr2,n);*/
+	
+	/*quickSort(arr1,0,n-1);
+    printArray(arr1,n);
+    quickSort(arr2,0,n-1);
+    printArray(arr2,n);*/
+	
 
 }
+
