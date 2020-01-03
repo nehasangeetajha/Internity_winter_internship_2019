@@ -1,9 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+template <class T>
 void insertionSort(int arr[],int n)
 {
-    int i,j,v;
+    int i,j;
+    T v;
     for(i = 1;i<n;i++)
     {
         v=arr[i];
@@ -27,14 +29,8 @@ void printArray(int arr[], int n)
 
 int main()
 {
-    int n;
-    cin>>n;
-    int arr[n];
-    for(int i = 0;i<n;i++)
-    {
-        cin>>arr[i];
-    }
-
-    insertionSort(arr,n);
+    int n = 5;
+    int arr[n] = {5,4,1,2,9};
+    insertionSort<int>(arr,n);
     printArray(arr,n);
 }
