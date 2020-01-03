@@ -13,7 +13,17 @@ partitioning procedure.
 3. Split the array into two parts- one with elements larger than the pivot and the other with elements smaller than the pivot.  
 4. Recursively, repeat the algorithm for both halves of the original array.   
  
- 
+### Analysis: ###
+* Best case: Each partition splits array in halves.  
+T(n) = 2T(n/2) + O(n) = O(n log n). 
+* Worst case: Each partition gives unbalanced splits.  
+T(n) = T(n-1) + O(n) = O(n^2). 
+* Average case: In this case ,we dont know where the split occurs. So we take all possible values.  
+T(n) = O(n log n) 
+* Worst case space complexity: O(1)
+
+
+
 
 
 
